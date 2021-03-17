@@ -1,15 +1,15 @@
-Pipeline{
+pipeline{
 	agent any
 	  stages{
-			Stage ('one'){
-				Steps{
+			stage ('one'){
+				steps{
 				 echo 'hi, this is edureka'
 				}
 			}
 			
-			Stage('two'){
-				Steps{
-					Input('do you want to proceed?')
+			stage('two'){
+				steps{
+					input('do you want to proceed?')
 				
 				}
 			
