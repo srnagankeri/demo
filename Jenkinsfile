@@ -14,6 +14,23 @@ pipeline{
 				}
 			
 			}
+		  
+		  			stage('three'){
+				parallel{
+				         stage('unit test'){
+				              steps{
+				            echo 'running UT'
+				}
+				       }
+				stage('integration test'){
+				         
+				      steps{
+				   echo 'running IT'
+				}
+				   }
+				}
+					}
+
 			 
 			
 						
